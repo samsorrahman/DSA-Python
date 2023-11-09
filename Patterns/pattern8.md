@@ -1,19 +1,19 @@
-def pattern8(N):
-    for i in range(N):
-        //printing spaces
-        for j in range(i):
-            print(" ", end="")
-        // Printing stars
-        for j in range(2 * N - (2 * i + 1)):
-            print("*", end="")
-        // Printing spaces 
-        for j in range(i):
-            print(" ", end="")
-        print()
+def pattern8(N): <br>
+    for i in range(N):<br>
+        //printing spaces<br>
+        for j in range(i):<br>
+            print(" ", end="")<br>
+        // Printing stars<br>
+        for j in range(2 * N - (2 * i + 1)):<br>
+            print("*", end="")<br>
+        // Printing spaces <br>
+        for j in range(i):<br>
+            print(" ", end="")<br>
+        print()<br>
 
-if __name__ == "__main__":
-    N = 5
-    pattern8(N)
+if __name__ == "__main__":<br>
+    N = 5<br>
+    pattern8(N)<br>
 
 
     -----------------------------------------------------
