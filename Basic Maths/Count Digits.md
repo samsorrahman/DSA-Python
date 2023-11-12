@@ -40,4 +40,54 @@ Space Complexity: O(1)
 
 </pre>
 
+-------------------------------------------------------------------------------------------------------
 
+<pre>
+  Algorithm / Intuition
+Solution 2 : 
+1. Convert the integer into a string.
+2. Find the length of the string 
+
+Code : 
+  def count_digits(n):
+  x = str(n)
+return len(x)
+
+n = 12345
+print("Number of digits in ", n, " is ", count_digits(n))
+
+
+Complexity Analysis
+Time Complexity: O (1) 
+
+Space Complexity: O(1)
+</pre>
+
+
+----------------------------------------------------------------------------------------------------
+<pre>
+  Solution 3:
+Algorithm / Intuition
+Use logarithm base 10 to count the number of digits. As
+
+The number of digits in an integer = the upper bound of log10(n).
+
+Example :
+
+n = 12345
+log10(12345) = 4.091
+Integral part of 4.091 is 4 and 4 + 1 =  5 which is also the number of digits in 12345
+
+Code :
+  import math
+def count_digits(n):
+  digits = math.floor(math.log10(n) + 1)
+return digits
+n = 12345
+print("Number of digits in ", n, " is ", count_digits(n))
+
+Complexity Analysis
+Time Complexity: O (1) 
+
+Space Complexity: O(1)
+</pre>
